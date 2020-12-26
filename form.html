@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <style>
+
+        input {
+            padding: 10px;
+        }
+        input:focus:invalid {
+            border: 1px solid green;
+        }
+        input:focus:invalid {
+            border: 1px solid red;
+        }
+
+    </style>
+    
+    <form>
+        <label>nombre :</label><br>
+        <input type="text" placeholder="nombre" required pattern="[A-Za-z]+"><br> 
+        <label>apellido :</label><br>
+        <input type="text" placeholder="nombre" required pattern="[A-Za-z]+"><br>
+        <label>edad :</label>
+        <input type="number" min="18" max="80" placeholder="edad"><br>
+        <label>sexo :</label><br>
+        <input type="radio" name="sex">masculino<br>
+        <input type="radio" name="sex">femenino <br>
+        <label for="dni">DNI :</label><br>
+        <input type="number" id="dni" required minlength="8" placeholder="DNI"><br>
+        <label>email :</label><br>
+        <input type="email" placeholder="email" required><br>
+        <button>enviar</button><br>
+
+    
+    </form>
+        
+
+</body>
+</html>
